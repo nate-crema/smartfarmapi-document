@@ -1,4 +1,4 @@
 # KDMHS Smartfarm API Document
 
 
-Enter [Smartfarm API](https://github.com/nate-crema/smartfarmapi-document/index.html/)
+Enter [Smartfarm API](http://nate-crema.github.io/smartfarmapi-document/index.html/)

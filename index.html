@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>KDMHS Smartfarm API Document</title>
+    <title>KDMHS Smartfarm API</title>
+    <link rel="stylesheet" href="./source/css/index.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="./source/js/index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    
+    <div class="header-api header">
+        <p class="title-page">스마트팜 API 시스템</p>
+        <p class="school">한국디지털미디어고등학교</p>
+    </div>
+    <div class="main">
+        <div class="sys_login">
+            <p class="login-title">스마트팜 API 로그인</p>
+            <div class="input-cover">
+                <input type="text" class="login-input" name="id" id="login-id"/>
+                <p class="guide-input guide-id">아이디 입력</p>
+                <input type="password" class="login-input" name="pw" id="login-pw"/>
+                <p class="guide-input guide-pw">비밀번호 입력</p>
+            </div>
+            <div class="login-req-cover">
+                <div class="timer-bar">
+                    <div class="timer-bar-inner"></div>
+                </div>
+                <p class="login-msg">n초 후 로그인합니다.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
