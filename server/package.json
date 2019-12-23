@@ -1,0 +1,30 @@
+{
+  "name": "sfamapi",
+  "version": "1.0.0",
+  "description": "KDMHS Smartfarm API",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nate-crema/smartfarmapi-document.git"
+  },
+  "keywords": [
+    "sfam"
+  ],
+  "author": "©2019 nate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nate-crema/smartfarmapi-document/issues"
+  },
+  "homepage": "https://github.com/nate-crema/smartfarmapi-document#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "fs": "0.0.1-security",
+    "ipware": "^2.0.0",
+    "path": "^0.12.7"
+  }
+}
