@@ -1,4 +1,10 @@
 module.exports = function(app, fs, path, axios, crypto) {
+    app.all('/*', function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        next();
+    });
+    
     app.get('/', function(req, res) {
         console.log("test link accessed");
         res.end("opened");
@@ -11,10 +17,4 @@ module.exports = function(app, fs, path, axios, crypto) {
         console.log("/login accessed");
         res.end("true");
     })
-
-    app.all('/*', function(req, res, next) {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "X-Requested-With");
-        next();
-    });
 }
