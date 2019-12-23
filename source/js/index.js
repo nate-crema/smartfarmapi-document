@@ -4,7 +4,7 @@ var cont = {
     id_input: "",
     pw_input: ""
 };
-const server = "http://45.115.155.227";
+const server = "https://nate2402.com";
 
 
 $(document).ready(function() {
