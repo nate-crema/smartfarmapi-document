@@ -64,9 +64,9 @@ function login_start(incounter) {
                     document.getElementsByClassName("login-msg")[0].innerText = "로그인중 에러가 발생하였습니다.";
                     document.getElementsByClassName("login-msg")[0].style.color = "red";
                     alert("Error: " + error);
-                    setTimeout(() => {
-                        location.reload();
-                    }, 1500);
+                    // setTimeout(() => {
+                    //     location.reload();
+                    // }, 1500);
                 })
             }
         }
