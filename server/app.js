@@ -22,7 +22,7 @@ const port = 80;
 const server = app.listen(port, function() {
     console.log("||-------API Server------||");
     console.log("Server started!!");
-    console.log("Link: http://" + ip + ":" + port);
+    // console.log("Link: http://" + ip + ":" + port);
     console.log("||-------API Server------||");
 })
 
