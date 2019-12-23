@@ -18,8 +18,8 @@ app.set('views', path.join(__dirname+"/views"));
 // const port = 554;
 // const ip = "localhost";
 const port = 80;
-const ip = "192.168.11.116";
-const server = app.listen(port, ip, function() {
+// const ip = "192.168.11.116";
+const server = app.listen(port, function() {
     console.log("||-------API Server------||");
     console.log("Server started!!");
     console.log("Link: http://" + ip + ":" + port);
