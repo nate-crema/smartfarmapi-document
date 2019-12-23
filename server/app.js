@@ -5,9 +5,13 @@ const path = require("path");
 const fs = require("fs");
 const axios = require("axios");
 const crypto = require("crypto");
+const cors = require("cors");
 var getIP = require('ipware')().get_ip;
 
 const app = express();
+
+
+app.use(cors());
 
 
 
