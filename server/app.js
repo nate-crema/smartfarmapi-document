@@ -15,9 +15,9 @@ app.use(cors());
 
 
 
-app.set('views', path.join(__dirname+"/views"));
-// app.set('view engine', 'ejs');
-// app.engine('html', require('ejs').renderFile);
+app.set('views', path.join(__dirname, "../"));
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
 
 // const port = 554;
 // const ip = "localhost";
@@ -68,7 +68,7 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use(express.static(__dirname + "/source"));
+app.use(express.static(path.join(__dirname, "/../source")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 

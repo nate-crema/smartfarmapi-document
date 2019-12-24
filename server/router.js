@@ -1,13 +1,16 @@
 module.exports = function(app, fs, path, axios, crypto) {
-    app.all('/*', function(req, res, next) {
-        res.header("Access-Control-Allow-Origin", "*");
-        res.header("Access-Control-Allow-Headers", "X-Requested-With");
-        next();
-    });
     
     app.get('/', function(req, res) {
-        console.log("test link accessed");
-        res.end("opened");
+        console.log(path.join(__dirname, "/../source"));
+        console.log('index page accessed');
+        console.log(req.session.login);
+        if (req.session.login == undefined) {
+            res.render("index.html", {
+                logined: false
+            });
+        } else {
+            res.redirect("/dashboard");
+        }
     })
     app.post('/', function(req, res) {
         console.log("/ accessed");
@@ -15,6 +18,20 @@ module.exports = function(app, fs, path, axios, crypto) {
     });
     app.post('/login', function(req, res) {
         console.log("/login accessed");
-        res.end("true");
+        console.log(req.body);
+        if (req.body.id_input == "test" && req.body.pw_input == "test") {
+            res.json({
+                result: true,
+                udata: {
+                    name: "tester",
+                    id: "test"
+                }
+            })
+        } else {
+            res.json({
+                result: false,
+                udata: {}
+            })
+        }
     })
 }
